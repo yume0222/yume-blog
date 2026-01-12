@@ -6,6 +6,7 @@ import { getBlogList, getCategoryDetail } from "@/app/_libs/microcms";
 import { notFound } from "next/navigation";
 import styles from "./page.module.css";
 import Pagination from "@/app/_components/Pagination";
+import { TOP_BLOG_LIMIT } from "@/app/_constants";
 
 type Props = {
   params: {
@@ -16,6 +17,7 @@ type Props = {
 export default async function Page({ params }: Props) {
   const category = await getCategoryDetail(params.id).catch(notFound);
   const { contents: blog, totalCount } = await getBlogList({
+    limit: TOP_BLOG_LIMIT,
     filters: `category[equals]${category.id}`,
   });
 
