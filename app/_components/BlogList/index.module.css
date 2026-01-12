@@ -1,0 +1,31 @@
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+.category {
+  margin-top: 20px;
+}
+.title {
+  margin-top: 8px;
+  font-family: var(--font-merriweather), serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.date {
+  margin-top: 6px;
+}
+.desc {
+  margin-top: 15px;
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+}

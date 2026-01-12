@@ -1,0 +1,14 @@
+.tag {
+  padding: 5px 16px;
+  border-radius: 3px;
+  color: #ffffff;
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.tagBird {
+  background-color: #283a61;
+}
+.tagFood {
+  background-color: pink;
+}

@@ -1,0 +1,30 @@
+.title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif';
+  margin-bottom: 24px;
+}
+.text {
+  font-size: 1rem;
+  text-align: center;
+}
+.container {
+  width: 840px;
+  margin: 0 auto;
+  padding: 160px 80px;
+}
+
+@media (max-width: 640px) {
+  .title {
+    text-align: left;
+  }
+  .text {
+    text-align: left;
+  }
+  .container {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    padding: 40px 16px;
+  }
+}

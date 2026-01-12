@@ -1,0 +1,9 @@
+.title {
+  margin-top: 50px;
+  font-family: var(--font-merriweather), serif;
+  font-size: 36px;
+  line-height: 1.6;
+}
+.blogList {
+  margin-top: 30px;
+}

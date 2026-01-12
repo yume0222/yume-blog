@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 60px auto 0;
+  padding: 0 4%;
+}
+.logo {
+  color: #000638;
+  font-size: 24px;;
+  font-family: var(--font-merriweather), serif;
+  font-weight: 900;
+}
+.list {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.item {
+  color: #605C59;
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.link:hover {
+  opacity: .7;
+}

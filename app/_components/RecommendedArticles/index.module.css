@@ -1,0 +1,37 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.link {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 20px;
+}
+.image {
+  border-radius: 5px;
+}
+.title {
+  margin-top: 8px;
+  font-family: var(--font-merriweather), serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.date {
+  margin-top: 6px;
+}
+.desc {
+  margin-top: 15px;
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media screen and (min-width: 768px) {
+  .link {
+    grid-template-columns: 250px 1fr;
+    gap: 34px;
+  }
+}

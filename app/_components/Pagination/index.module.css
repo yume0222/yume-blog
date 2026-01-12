@@ -1,0 +1,22 @@
+.list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.link {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #F5F5F5;
+  color: #605C59;
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+.current {
+  background: #000638;
+  color: #ffffff;
+}

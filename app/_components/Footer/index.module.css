@@ -1,0 +1,31 @@
+.footer {
+  padding: 36px 0;
+  background: #F5F5F5;
+  font-family: var(--font-merriweather), serif;
+  text-align: center;
+  line-height: 1.6;
+}
+.inner {
+  padding: 0 4%;
+  margin: 0 auto;
+}
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.item {
+  color: #544B44;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.link:hover {
+  opacity: .7;
+}
+.copyright {
+  margin-top: 26px;
+  color: #3E3E3E;
+  font-size: 14px;
+  font-weight: bold;
+}
