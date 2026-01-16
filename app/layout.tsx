@@ -9,7 +9,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 
 export const metadata: Metadata = {
-  metadataBase: new URL('http://localhost:3000'),
+  metadataBase: new URL('https://yume-blog.vercel.app'),
   title: {
     template: '%s | Yume Blog',
     default: 'Yume Blog',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     images: ['/ogp.png'],
   },
   alternates: {
-    canonical: 'http://localhost:3000',
+    canonical: 'https://yume-blog.vercel.app',
   },
 };
 
