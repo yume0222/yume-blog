@@ -20,12 +20,12 @@ export default function RecommendedArticles({ blog }: Props) {
         {blog.map((article) => (
           <li key={article.id} className={styles.item}>
             <Link href={`/blog/${article.id}`} className={styles.link}>
-              <div className={styles.image}>
+              <div className={styles.imageWrapper}>
                 <Image
                   src={article.thumbnail.url}
                   alt=""
-                  width={article.thumbnail.width}
-                  height={article.thumbnail.height}
+                  fill
+                  className={styles.image}
                 />
               </div>
               <div className={styles.content}>

@@ -19,13 +19,8 @@ export default function Article({ data }: Props) {
       <div className={styles.date}>
         <Date date={data.publishedAt ?? data.createdAt} />
       </div>
-      <div className={styles.image}>
-        <Image
-          src={data.thumbnail.url}
-          alt=""
-          width={data.thumbnail.width}
-          height={data.thumbnail.height}
-        />
+      <div className={styles.imageWrapper}>
+        <Image src={data.thumbnail.url} alt="" fill className={styles.image} />
       </div>
       <p className={styles.desc}>{data.description}</p>
       <div

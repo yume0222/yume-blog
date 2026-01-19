@@ -3,6 +3,15 @@
   grid-template-columns: 1fr;
   gap: 40px;
 }
+.imageWrapper {
+  position: relative;
+  aspect-ratio: 510 / 278;
+  width: 100%;
+  overflow: hidden;
+}
+.image {
+  object-fit: cover;
+}
 .category {
   margin-top: 20px;
 }

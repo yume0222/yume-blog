@@ -9,8 +9,15 @@
   align-items: center;
   gap: 20px;
 }
-.image {
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 250 / 165;
+  overflow: hidden;
   border-radius: 5px;
+}
+.image {
+  object-fit: cover;
 }
 .title {
   margin-top: 8px;

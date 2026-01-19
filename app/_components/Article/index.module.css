@@ -4,10 +4,16 @@
   font-size: 48px;
   font-weight: bold;
 }
-.image {
+.imageWrapper {
+  position: relative;
+  aspect-ratio: 800 / 278;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
   margin-top: 18px;
-  /* width: 100%;
-  height: 278px; */
+}
+.image {
+  object-fit: cover;
 }
 .desc {
   margin-top: 30px;

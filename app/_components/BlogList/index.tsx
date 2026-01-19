@@ -20,12 +20,12 @@ export default function BlogList({ blog }: Props) {
         {blog.map((article) => (
           <li key={article.id}>
             <Link href={`/blog/${article.id}`}>
-              <div className={styles.image}>
+              <div className={styles.imageWrapper}>
                 <Image
                   src={article.thumbnail.url}
                   alt=""
-                  width={article.thumbnail.width}
-                  height={article.thumbnail.height}
+                  fill
+                  className={styles.image}
                 />
               </div>
               <div className={styles.category}>

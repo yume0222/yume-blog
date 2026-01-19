@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import Sheet from "@/app/_components/Sheet";
 import SheetStyles from "@/app/_components/Sheet/index.module.css";
 import RecommendedArticles from "@/app/_components/RecommendedArticles";
+import { TOP_BLOG_LIMIT } from "@/app/_constants";
 
 type Props = {
   params: {
@@ -17,6 +18,7 @@ export default async function Page({ params }: Props) {
   const data = await getBlogDetail(params.slug).catch(notFound);
   const { contents: blog } = await getBlogList({
     filters: `category[equals]${data.category.id}`,
+    limit: TOP_BLOG_LIMIT,
   });
 
   return (

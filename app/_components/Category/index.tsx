@@ -14,6 +14,12 @@ export default function Category({ category }: Props) {
     case "食":
       className += ` ${styles.tagFood}`;
       break;
+    case "創":
+      className += ` ${styles.tagMake}`;
+      break;
+    case "その他":
+      className += ` ${styles.tagOthers}`;
+      break;
   }
   return <span className={className}>{category.name}</span>;
 }
